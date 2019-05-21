@@ -77,3 +77,11 @@
 .navbar-fixed-left .navbar-nav > li {
   float: none;  /* Cancel default li float: left */
 }
+
+.cards {
+	width: 12rem;
+	height: 14.1875rem;
+  margin: 0 30px 30px 0;
+  border-radius: 0.4rem;
+	object-fit: cover;
+}
