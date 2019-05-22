@@ -1,8 +1,14 @@
-#section1 {padding-top:50px;height:100vh;color: #fff; background-color: #1E88E5;}
-#section2 {padding-top:50px;height:100vh;color: #fff; background-color: #673ab7;}
-#section3 {padding-top:50px;height:100vh;color: #fff; background-color: #ff9800;}
-#section4 {padding-top:50px;height:100vh;color: #fff; background-color: #00bcd4;}
-#section5 {padding-top:50px;height:100vh;color: #fff; background-color: #009688;}
+#section1 {height:100vh;color: #fff; background-color: #1E88E5;}
+#section2 {height:100vh;color: #fff; background-color: #673ab7;}
+#section3 {height:100vh;color: #fff; background-color: #ff9800;}
+#section4 {height:100vh;color: #fff; background-color: #00bcd4;}
+#section5 {height:100vh;color: #fff; background-color: #009688;}
+
+body {
+	font-family:Lato;
+	/* font-family:Merriweather; */
+	/* font-family:Raleway; */
+}
 
 .dotstyle ul {
 	position: relative;
@@ -76,6 +82,16 @@
 
 .navbar-fixed-left .navbar-nav > li {
   float: none;  /* Cancel default li float: left */
+}
+
+.intro-heading {
+	font-size: 4rem;
+}
+
+.subtitle {
+	font-size: 1rem;
+	letter-spacing: 0.1rem;
+	color: rgba(255,255,255,0.7);
 }
 
 .cards {
