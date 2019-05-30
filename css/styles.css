@@ -4,8 +4,9 @@
 #section4 {height:100vh;color: #fff; background-color: #00bcd4;}
 #section5 {height:100vh;color: #fff; background-color: #009688;}
 
-body {
+html, body {
 	font-family:Lato;
+	font-weight:300;
 	/* font-family:Merriweather; */
 	/* font-family:Raleway; */
 }
@@ -84,8 +85,20 @@ body {
   float: none;  /* Cancel default li float: left */
 }
 
-.intro-heading {
+h1 {
 	font-size: 4rem;
+	font-weight: 300;
+}
+
+h2 {
+  font-size: 2.5rem;
+	font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+	font-size: 1.4rem;
+	line-height: 2rem;
 }
 
 .subtitle {
@@ -94,10 +107,19 @@ body {
 	color: rgba(255,255,255,0.7);
 }
 
+.categories {
+	font-size:0.9rem;
+	line-height:1.2rem;
+}
+
 .cards {
 	width: 12rem;
 	height: 14.1875rem;
   margin: 0 30px 30px 0;
   border-radius: 0.4rem;
 	object-fit: cover;
+}
+
+.projBg {
+	background-image: url("../img/delta-banner.png");
 }
