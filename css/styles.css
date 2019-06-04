@@ -121,5 +121,27 @@ h3 {
 }
 
 .projBg {
-	background-image: url("../img/delta-banner.png");
+	background: url("../img/delta-banner5.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.imgWrap {
+	margin: auto;
+}
+
+.imgwrap img {
+   display: block;
+   width: 100%;
+   max-width: 500px; /*actual image width*/
+   height: auto; /* maintain aspect ratio*/
+   margin: auto; /*optional centering of image*/
 }
