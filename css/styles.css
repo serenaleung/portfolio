@@ -1,6 +1,7 @@
 #section1 {height:100vh;color: #fff; background-color: #1E88E5;}
-#section2 {height:100vh;color: #fff; background-color: #673ab7;}
-#section3 {height:100vh;color: #fff; background-color: #ff9800;}
+/* #section1 {height:100vh;color: #fff; background-color: #000000;} */
+#section3 {height:100vh;color: #fff; background-color: #1Fbcf9;}
+#section2 {height:100vh;color: #fff; background-color: #f7f7f7;}
 #section4 {height:100vh;color: #fff; background-color: #00bcd4;}
 #section5 {height:100vh;color: #fff; background-color: #009688;}
 
@@ -88,6 +89,9 @@ html, body {
 h1 {
 	font-size: 4rem;
 	font-weight: 300;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 30em;
 }
 
 h2 {
@@ -147,27 +151,58 @@ h3 {
 }
 
 /* DEMO-SPECIFIC STYLES */
-.typewriter {
+/* .typewriter {
   color: #fff;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  /* border-right: .15em solid orange; */ /* The typwriter cursor */
+/*   white-space: nowrap; /* Keeps the content on a single line */
+/*   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: .15em;
   animation:
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
-}
+} */
 
 /* The typing effect */
-@keyframes typing {
+/* @keyframes typing {
   from { width: 0 }
   to { width: 100% }
-}
+} */
 
 /* The typewriter cursor effect */
-@keyframes blink-caret {
+/* @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange }
+} */
+
+
+h1:nth-child(1){
+  animation: type 2s steps(60, end);
+	max-width: 6rem;
+}
+h1:nth-child(2){
+  animation: type2 4s steps(60, end);
+	max-width: 20rem;
+}
+h1:nth-child(3){
+  animation: type2 5s steps(60, end);
+}
+
+.blinkCursor{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
 }
